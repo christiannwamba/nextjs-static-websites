@@ -8,12 +8,12 @@ module.exports = {
       '/': { page: '/' },
     };
 
-    projects.forEach((project) => {
-      paths[`/project/${project.slug}`] = {
-        page: '/project/[path]',
-        query: { path: project.slug },
-      };
-    });
+    // projects.forEach((project) => {
+    //   paths[`/project/${project.slug}`] = {
+    //     page: '/project/[path]',
+    //     query: { path: project.slug },
+    //   };
+    // });
 
     return paths;
   },
